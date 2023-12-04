@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #03befc;
+  color: #ffff;
+}
+.content {
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
+}
+.display {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #ffff;
+  color: #333;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+  border-radius: 7px;
+}
+
+.content h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+.content h1 span {
+  border-bottom: 4px solid #fff;
+}
+.display i {
+  width: 30px;
+  cursor: pointer;
+}
+.display input {
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+}
+.content button img {
+  width: 28px;
+  margin-right: 10px;
+}
+.content button {
+  border: 0;
+  outline: 0;
+  background: #03befc;
+  color: white;
+  border: 3px solid;
+  font-size: 22px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 26px;
+  border-radius: 10px;
+}
+/* Default styles for all screen sizes */
+
+/* Responsive styles for screens smaller than 600px (e.g., mobile phones) */
+@media (max-width: 600px) {
+  /* CSS rules for smaller screens */
+  body {
+    font-size: 16px;
+  }
+  .content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .display {
+    width: 130%;
+  }
+}
+
+/* Responsive styles for screens between 601px and 1024px (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* CSS rules for tablets */
+  body {
+    font-size: 18px;
+  }
+  .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive styles for screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+  /* CSS rules for desktops */
+  body {
+    font-size: 20px;
+  }
+  .content {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
